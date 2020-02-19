@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h2>Upload</h2>
+    <input id="inputImage" class="inputImage inline" type="file" name="document" accept="image/*" onchange="loadFile(event);" oninput="updateValue1();">
+    <button id="submitButton" type="submit" class="hide gButton inline" onclick="addImage();">Upload File</button>
+    <button id="labelButton" class="hide gButton inline" onclick="labelImage()">Process</button>
+    <img id="output" style="width:500px;">
+    <p id="labelsTable"></p>
+{% endblock %}
